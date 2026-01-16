@@ -22,7 +22,7 @@ def test_post_product():
 
     body = response.json()
 
-    with open("schemas/product_created.json") as file:
+    with open("schemas/product_created_or_updated.json") as file:
         schema = json.load(file)
 
     validate(instance=body, schema=schema)
